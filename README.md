@@ -1,5 +1,5 @@
 # learn-css
 
-## 01. sticky
+## 01.sticky
 
-display: sticky
+## 02.mouseHover
