@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #1c363e;
+}
+
+.imageBox {
+  height: 190px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #000;
+  border-radius: 10px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transform: translateX(-50%) translateY(-50%);
+}
+.imageBox img {
+  width: 100%;
+  transition: 0.5s;
+}
+.imageBox .textBox {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  background: #7986cb;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  font-family: arial;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.imageBox .textBox p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.imageBox:hover .textBox {
+  bottom: -65%;
+}
+.imageBox:hover img {
+  transform: translateY(-35%);
+}
