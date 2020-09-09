@@ -10,7 +10,7 @@
 
 ## 05.equal size column
 
-## 06.loadingAnimation
+## 06.loadingAnimation[1]
 
 ## 07.hover Effect
 
@@ -21,3 +21,5 @@
 ## 10.image Hover Effect
 
 ## 11.3d card flip
+
+## 12.loadingAnimation[2]
