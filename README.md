@@ -53,3 +53,5 @@
 ## 26.loading animation[3]
 
 ## 27.video in background
+
+## 28.image zoom
