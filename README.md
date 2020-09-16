@@ -10,7 +10,7 @@
 
 ## 05.equal size column
 
-## 06.loadingAnimation[1]
+## 06.loading animation[1]
 
 ## 07.hover Effect
 
@@ -22,9 +22,9 @@
 
 ## 11.3d card flip
 
-## 12.loadingAnimation[2]
+## 12.loading animation[2]
 
-## 13.image Slide on Hover
+## 13.image slide on Hover
 
 ## 14.hamburger into X
 
@@ -40,7 +40,7 @@
 
 ## 20.skewed background
 
-## 21.3d div box pointer[1]
+## 21.3d div box pointer
 
 ## 22.custom box shadow
 
@@ -49,3 +49,5 @@
 ## 24.blur text
 
 ## 25.create animated heart
+
+## 26.loading animation[3]
