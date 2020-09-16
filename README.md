@@ -45,3 +45,5 @@
 ## 22.custom box shadow
 
 ## 23.create hexagon
+
+## 24.blur text
