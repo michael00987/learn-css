@@ -14,18 +14,35 @@ canvas6.height = 600;
 canvas6.style.background = '#acacac';
 body.appendChild(canvas6);
 
-let xPos = 30;
+let xPos = 10;
+let count = 0;
+let timerId = 0;
 function draw() {
-  context6.clearRect(0, 0, canvas6.width, canvas6.height);
-  context6.beginPath();
-  context6.arc(xPos, 150, 15, 0, toRadian(360), false);
-  context6.fill();
-  xPos += 1;
-  requestAnimationFrame(draw); // 안에서 실행사면 재귀적으로 실행된다. 프래임은 1/60초 를 목표로 한다. 기기 성능 등의 이유로 보장할수 있는 것은 아니다.
+  count++;
+  if (count % 10 === 0) {
+    // 조건으로 인터벌을 걸수도 있고 인터벌 메서드로 걸수도 있다.
+    context6.clearRect(0, 0, canvas6.width, canvas6.height);
+    context6.beginPath();
+    context6.arc(xPos, 150, 15, 0, toRadian(360), false);
+    context6.fill();
+    xPos += 30;
+    // if (xPos >= canvas6.width) {
+    //   xPos *= -0.1;
+    // }
+  } // 조건문
+  timerId = requestAnimationFrame(draw); // 안에서 실행사면 재귀적으로 실행된다. 프래임은 1/60초 를 목표로 한다. 기기 성능 등의 이유로 보장할수 있는 것은 아니다.
+  if (xPos >= canvas6.width) {
+    cancelAnimationFrame(timerId);
+  }
 }
-// requestAnimationFrame(draw); // 밖에 실행하면 한번만 실행된다.
+requestAnimationFrame(draw); // 밖에 실행하면 한번만 실행된다.
 
 draw();
+
+canvas6.addEventListener('click', () => {
+  // 캔버스에 이벤트를 걸어서 클릭할대 멈추게 할수도 있다.
+  cancelAnimationFrame(timerId);
+});
 
 /** 5번 캔버스 */
 
