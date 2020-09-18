@@ -57,3 +57,9 @@
 ## 28.image zoom
 
 ## 29.bound ball with canvas
+
+## 30.learn_canvas_1
+
+## 31.learn_canvas_2 ( 이미지 )
+
+## 32.learn_canvas_3 ( 그림판 )
