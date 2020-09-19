@@ -65,3 +65,5 @@
 ## 32.learn_canvas_3 ( 그림판 )
 
 ## 33.learn_canvas_4 ( ex1, ex2, ex3 )
+
+## 34.learn_canvas_5 (save(), restore())
