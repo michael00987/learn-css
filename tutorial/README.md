@@ -34,7 +34,7 @@
 
 ### 16.loading progress bar with changing background
 
-### 17.social media icons
+### 17.social media icons[1]
 
 ### 18.3D hover effect
 
@@ -65,3 +65,5 @@
 ### 31.jumping
 
 ### 32.tea cup
+
+### 33.social media icons[2]
