@@ -40,7 +40,7 @@
 
 ### 19.changing background color
 
-### 20.skewed background
+### 20.skewed background[1]
 
 ### 21.3d div box pointer
 
@@ -67,3 +67,5 @@
 ### 32.tea cup
 
 ### 33.social media icons[2]
+
+### 34.skewed background[2]
