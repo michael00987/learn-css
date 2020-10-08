@@ -1,11 +1,33 @@
-div {
-  width: 300px;
-  height: 300px;
-  background: #000;
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+.a {
+  border: 1px solid blue;
+  background: red;
+}
+
+.a:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.a > div {
+  float: left;
+}
+
+.text {
+  overflow: hidden;
+  display: block;
+  width: 150px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.b {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  width: 180px;
+  height: 56px;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
 }
 /*# sourceMappingURL=style.css.map */

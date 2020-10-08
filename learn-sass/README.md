@@ -28,4 +28,4 @@ mixin : 파라미터로 각각에 속성을 넘길수 있다.
 
 ## 11 @if
 
-## 12 @if {} @else if {}@else {}
+## 12 clear, ellipsis

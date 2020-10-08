@@ -1,22 +1,41 @@
-@mixin position($x, $y, $z) {
-  position: absolute;
-  left: $x;
-  top: $y;
-  z-index: $z;
-  @if $x ==50% and $y == 50% {
-    transform: translate(-50%, -50%);
-  } @else if $x==50% {
-    transform: translateX(-50%);
-  } @else if $y ==50% {
-    transform: translateY(-50%);
+@mixin clear {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.a {
+  border: 1px solid blue;
+  background: red;
+  @include clear();
+  > div {
+    float: left;
   }
 }
 
-div {
-  width: 300px;
-  height: 300px;
-  background: #000;
-  // @include position(50%, 50%, 1);
-  // @include position(50%, null, 2);
-  @include position(null, 50%, 1);
+@mixin ellipsis($w) {
+  overflow: hidden;
+  display: block;
+  width: $w;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text {
+  @include ellipsis(150px);
+}
+
+@mixin ellipsis2($line, $w, $h) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  width: $w;
+  height: $h;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.b {
+  @include ellipsis2(3, 180px, 56px);
 }
