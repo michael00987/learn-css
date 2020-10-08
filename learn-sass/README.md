@@ -29,3 +29,5 @@ mixin : 파라미터로 각각에 속성을 넘길수 있다.
 ## 11 @if
 
 ## 12 clear, ellipsis
+
+## 13 position abolute center

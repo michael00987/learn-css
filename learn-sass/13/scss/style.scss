@@ -1,0 +1,46 @@
+// div {
+//   position: absolute;
+//   width: 300px;
+//   height: 300px;
+//   border: 1px solid red;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+// 가운데 일 때만 사용할수 있다.
+// @mixin box_center($w) {
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   width: $w;
+//   // 높이는 자식 요소의 크기에 따라 결정 되니 필요 없을듯 하다.
+//   // 만약 필요하다면 사용하는 곳에서 설정 하면 될것 같다.
+//   transform: translate(-50%, -50%);
+// }
+// div {
+//   @include box_center(500px);
+//   height: 200px;
+//   border: 1px solid red;
+// }
+
+@mixin position($x, $y, $z, $w) {
+  position: absolute;
+  left: $x;
+  top: $y;
+  z-index: $z;
+  width: $w;
+  @if $x ==50% and $y ==50% {
+    transform: translate(-50%, -50%);
+  } @else if $y ==50% {
+    transform: translateY(-50%);
+  } @else if $x==50% {
+    transform: translateX(-50%);
+  }
+}
+
+div {
+  @include position(50%, 50%, 2, 500px);
+  height: 200px;
+  border: 1px solid red;
+}
