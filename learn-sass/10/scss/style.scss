@@ -1,0 +1,33 @@
+.visual {
+  background: pink;
+  height: 300px;
+  div {
+    @extend %m0auto;
+
+    background: rgba(0, 0, 0, 0.5);
+    height: 300px;
+  }
+}
+.main {
+  background: purple;
+  height: 500px;
+  div {
+    @extend %m0auto;
+    background: rgba(0, 0, 0, 0.5);
+    height: 500px;
+  }
+}
+.footer {
+  background: violet;
+  height: 150px;
+  div {
+    @extend %m0auto;
+    background: rgba(0, 0, 0, 0.5);
+    height: 150px;
+  }
+}
+
+%m0auto {
+  width: 1000px;
+  margin: 0 auto;
+}

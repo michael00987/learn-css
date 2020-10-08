@@ -1,0 +1,29 @@
+// extend : 공통 속성
+// mixin include : 파라미터를 통한 각각의 속성
+
+%name {
+  font-size: 14px;
+  color: blue;
+}
+
+@mixin name($bold, $color) {
+  font-weight: $bold;
+  background: $color;
+  font-size: 40px;
+}
+
+.a {
+  @extend %name;
+  @include name(800, red);
+}
+.b {
+  @extend .d;
+  @include name(600, gray);
+}
+.c {
+  @extend %name;
+  @include name(300, green);
+}
+.d {
+  font-size: 100px;
+}

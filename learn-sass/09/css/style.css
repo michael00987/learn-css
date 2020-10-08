@@ -1,0 +1,27 @@
+.a, .c {
+  font-size: 14px;
+  color: blue;
+}
+
+.a {
+  font-weight: 800;
+  background: red;
+  font-size: 40px;
+}
+
+.b {
+  font-weight: 600;
+  background: gray;
+  font-size: 40px;
+}
+
+.c {
+  font-weight: 300;
+  background: green;
+  font-size: 40px;
+}
+
+.d, .b {
+  font-size: 100px;
+}
+/*# sourceMappingURL=style.css.map */
