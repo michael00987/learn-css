@@ -12,4 +12,8 @@
 
 ## 06 Interpolation
 
+## 07 iterator ( for )
+
+## 08 iterator ( each )
+
 // 자주 사용하는 것 들을 함수처럼 만들어서 사용할수 있다.

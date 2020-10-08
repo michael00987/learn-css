@@ -1,0 +1,17 @@
+// iterator 01
+
+@charset 'utf-8';
+
+.list li {
+  background: no-repeat 0 0 / 20px auto;
+  text-indent: 30px;
+}
+
+@for $i from 1 to 6 {
+  .list li.ico#{$i} {
+    background-image: url(../scss/ico#{$i}.png);
+  }
+  .list li:nth-child(#{$i})::before {
+    content: '제목#{$i}';
+  }
+}

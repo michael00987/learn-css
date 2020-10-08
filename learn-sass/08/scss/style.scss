@@ -1,0 +1,27 @@
+// iterator 02
+
+@for $i from 1 to 5 {
+  h#{$i} {
+    background: no-repeat 0 0 / 20px auto;
+    text-indent: 30px;
+  }
+}
+
+@each $var in facebook, instar, phone, heart {
+  .ico_#{$var} {
+    background-image: url(../scss/#{$var}.png);
+  }
+}
+
+$heading: (
+  h1: 80px,
+  h2: 60px,
+  h3: 55px,
+  h4: 40px,
+);
+
+@each $ele, $fs in $heading {
+  #{$ele} {
+    font-size: $fs;
+  }
+}

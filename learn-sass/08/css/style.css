@@ -1,0 +1,52 @@
+h1 {
+  background: no-repeat 0 0 / 20px auto;
+  text-indent: 30px;
+}
+
+h2 {
+  background: no-repeat 0 0 / 20px auto;
+  text-indent: 30px;
+}
+
+h3 {
+  background: no-repeat 0 0 / 20px auto;
+  text-indent: 30px;
+}
+
+h4 {
+  background: no-repeat 0 0 / 20px auto;
+  text-indent: 30px;
+}
+
+.ico_facebook {
+  background-image: url(../scss/facebook.png);
+}
+
+.ico_instar {
+  background-image: url(../scss/instar.png);
+}
+
+.ico_phone {
+  background-image: url(../scss/phone.png);
+}
+
+.ico_heart {
+  background-image: url(../scss/heart.png);
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 55px;
+}
+
+h4 {
+  font-size: 40px;
+}
+/*# sourceMappingURL=style.css.map */
