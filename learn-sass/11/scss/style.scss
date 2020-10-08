@@ -1,0 +1,20 @@
+@mixin btn_radious($h, $radius: true) {
+  padding: 0 20px;
+  height: $h;
+  line-height: $h;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+
+  @if $radius {
+    border-radius: $h/2;
+  } @else {
+    border: 1px solid red;
+  }
+}
+
+.btn {
+  // @include btn_radious(200px, true);
+  @include btn_radious(200px, false);
+}
