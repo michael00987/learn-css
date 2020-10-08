@@ -1,0 +1,25 @@
+// 함수 처럼 2개 이상의 파라미터를 넣어 줄수 있다. 넣을때는 변수를 선언 하는 법과 동일하게 $ 로 시작한다.
+@mixin border($px, $color) {
+  border: $px solid $color;
+}
+
+div {
+  display: block;
+  @include border(15px, red);
+}
+p {
+  display: block;
+  @include border(20px, pink);
+}
+span {
+  display: block;
+  @include border(50px, blue);
+}
+
+@mixin box($w, $h) {
+  width: $w;
+  height: $h;
+}
+.box {
+  @include box(50px, 80px);
+}

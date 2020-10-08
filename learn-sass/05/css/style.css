@@ -1,0 +1,20 @@
+div {
+  display: block;
+  border: 15px solid red;
+}
+
+p {
+  display: block;
+  border: 20px solid pink;
+}
+
+span {
+  display: block;
+  border: 50px solid blue;
+}
+
+.box {
+  width: 50px;
+  height: 80px;
+}
+/*# sourceMappingURL=style.css.map */
