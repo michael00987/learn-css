@@ -1,0 +1,48 @@
+$left: left;
+$right: right;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+%size {
+  height: 320px;
+  width: 100%;
+}
+
+@mixin background($color) {
+  background-color: $color;
+  position: relative;
+}
+.sec1 {
+  @extend %size;
+  @include background(#262626);
+}
+
+@mixin ba($ver, $hor) {
+  content: '';
+  position: absolute;
+  border-#{$ver}: 100px solid (#ffeb3b);
+  border-#{$hor}: 100vw solid transparent;
+  @if $ver==top {
+    bottom: -100px;
+  } @else {
+    top: -100px;
+  }
+}
+.sec2 {
+  @extend %size;
+  @include background(#ffeb3b);
+  &::before {
+    @include ba(bottom, left);
+  }
+  &::after {
+    @include ba(top, right);
+    z-index: 1;
+  }
+}
+.sec3 {
+  @extend %size;
+  @include background(#262626);
+}
