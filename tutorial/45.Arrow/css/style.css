@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #6d0000;
+}
+
+.container {
+  width: 500px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 0;
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.left:hover {
+  border-left-color: white;
+  border-bottom-color: white;
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 0;
+  border-right-color: rgba(255, 255, 255, 0.5);
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-top-width: 3px;
+  border-top-style: solid;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.right:hover {
+  border-right-color: white;
+  border-top-color: white;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+@mixin center($vector, $w, $h) {
+  position: absolute;
+  top: 50%;
+  #{$vector}: 50%;
+  transform: translate($w, $h);
+}
+
+@mixin border($w, $h) {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  transform: rotate(45deg);
+  #{$w}: 0;
+  border-#{$w}-color: rgba(255, 255, 255, 0.5);
+  border-#{$w}-width: 3px;
+  border-#{$w}-style: solid;
+  border-#{$h}-color: rgba(255, 255, 255, 0.5);
+  border-#{$h}-width: 3px;
+  border-#{$h}-style: solid;
+  transition: all 0.5s ease-in;
+  &:hover {
+    border-#{$w}-color: rgba(255, 255, 255, 1);
+    border-#{$h}-color: rgba(255, 255, 255, 1);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #6d0000;
+}
+
+.container {
+  width: 500px;
+  background: #000;
+  @include center(left, -50%, -50%);
+}
+.left {
+  @include center(left, 0, -50%);
+  @include border(left, bottom);
+}
+.right {
+  @include center(right, 0, -50%);
+  @include border(right, top);
+}
