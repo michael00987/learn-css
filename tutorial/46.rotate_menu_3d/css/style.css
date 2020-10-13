@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #262626;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+}
+
+ul li {
+  display: inline-block;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+ul li a {
+  color: #262626;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  position: relative;
+}
+
+ul li a span {
+  display: block;
+  padding: 15px 20px;
+  color: transparent;
+}
+
+ul li a span:before {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f30000;
+  color: #fff;
+  padding: 15px 20px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotateX(90deg) translateY(50px);
+          transform: rotateX(90deg) translateY(50px);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  z-index: 1;
+}
+
+ul li a span:hover:before {
+  -webkit-transform: rotateX(0deg) translateY(0px);
+          transform: rotateX(0deg) translateY(0px);
+}
+
+ul li a span:after {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  color: #262626;
+  padding: 15px 20px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotateX(0deg) translateY(0px);
+          transform: rotateX(0deg) translateY(0px);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+ul li a span:hover:after {
+  -webkit-transform: rotateX(90deg) translateY(-10px);
+          transform: rotateX(90deg) translateY(-10px);
+}
+/*# sourceMappingURL=style.css.map */
