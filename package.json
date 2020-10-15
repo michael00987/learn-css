@@ -1,0 +1,26 @@
+{
+  "name": "learn-css",
+  "version": "1.0.0",
+  "description": "## [1분코딩 유튜브 링크](https://www.youtube.com/c/1%EB%B6%84%EC%BD%94%EB%94%A9/featured)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michael00987/learn-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michael00987/learn-css/issues"
+  },
+  "homepage": "https://github.com/michael00987/learn-css#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
