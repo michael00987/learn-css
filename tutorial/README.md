@@ -74,7 +74,7 @@
 
 ### 36.circle category
 
-### 37.my logo ( clone Netflix)
+## 37.stretchable button (1:cubic-bezier, 2:animation)
 
 ### 38.Animated Button (with Scss)
 
@@ -93,5 +93,3 @@
 ### 45 arrow for carousel(like slide)
 
 ### 46.rotate menu 3d
-
-## 47.stretchable button (1:cubic-bezier, 2:animation)
