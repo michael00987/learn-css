@@ -1,7 +1,7 @@
 {
   "name": "learn-css",
   "version": "1.0.0",
-  "description": "## [1분코딩 유튜브 링크](https://www.youtube.com/c/1%EB%B6%84%EC%BD%94%EB%94%A9/featured)",
+  "description": "learn-css",
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",

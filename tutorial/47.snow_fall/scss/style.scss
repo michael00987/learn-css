@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+section {
+  background: url(../../../snow.jpg) no-repeat; /* 호출하는 곳을 기준으로 경로를 잡아야한다. 아니면. 절대 경로를 잡자!!*/
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+@mixin snow($blur, $x, $y, $sec, $bgSize, $scal) {
+  background: url(../../../snowimg.png) repeat;
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale($scal);
+  background-size: $bgSize;
+  animation: animate $sec infinite linear;
+  @if $blur !=null {
+    filter: blur(1px);
+  }
+
+  @keyframes animate {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: $x $y;
+    }
+  }
+}
+
+.snow1 {
+  @include snow(null, 300px, 1000px, 20s, 0px, 2.5);
+}
+.snow2 {
+  @include snow(blur, 100px, 100px, 25s, 300px, 2);
+}
+.snow3 {
+  @include snow(blur, 250px, 1500px, 28s, 800px, 3);
+}
