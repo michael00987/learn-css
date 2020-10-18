@@ -29,3 +29,7 @@ app.get('/create/02', (req, res, next) => {
 
 > 만약 이미지의 경우 용량이 커서 이미지를 가져오는데 시간이 걸린다면, 미디엄에서 사용하는 방식으로 해도 좋을것 같다
 > (용량이 작은 흐릿한 이미지를 먼저 불러오고 , 원본 이미지 준비가 완료 되면 작은 이미지는 지우고 큰이미지로 대체한다.)
+
+### 03. transform effects on scroll
+
+> tutorial/49. transform_effects_on_scroll circle => star
